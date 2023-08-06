@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+body{
+    background: #081b29;
+    color: #ededed;
+    background: url(image/home.jpg);
+    box-sizing: border-box;
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .8s;
+}
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.logo{
+    position: relative;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ededed;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(0, 191, 255, 0.7); /* Add a sky blue glow shadow */
+}
+
+.logo::before{
+    
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .2s;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    text-shadow: 0 0 10px rgba(0, 191, 255, 0.7); /* Add a sky blue glow shadow */
+    
+
+}
+
+.navbar :hover {
+    color: #00abf0;
+}
+
+.Home{
+    height: 100vh;
+    
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    
+
+    
+}
+
+.Home-content{
+    max-width: 600px;
+
+}
+
+.Home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    position: relative;
+}
+
+
+.Home-content h1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .3s;
+}
+.Home-content h3{
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.Home-content h3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .5s;
+}
+
+.Home-content p{
+    font-size: 20px;
+    margin-bottom: 6px;
+    position: relative;
+
+}
+
+.Home-content p::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .7s;
+}
+
+
+.Home-content .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    
+}
+
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+
+}
+
+
+
+.btn-box a:hover{
+    color: #00abf0;
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: #00abf0;
+}
+.btn-box a:nth-child(2):hover{
+    color: #081b29;
+}
+.btn-box a:nth-child(2)::before{
+    background: #00abf0;
+}
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s;
+}
+.btn-box a:hover:before{
+    width: 100%;
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.social-icons a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    
+    
+}
+
+.social-icons a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.social-icons a:hover::before{
+    width: 100%;
+
+}
+
+.social-icons a:hover{
+    color: #081b29;
+}
+
+
+
+@keyframes showRight {
+    100%{
+        width: 0;
+
+    }
+}
+
+
+
+  /* Your existing CSS styles go here */
+
+/* Media Queries for responsiveness */
+@media (max-width: 1023px) {
+    .header {
+        padding: 12px 20px;
+    }
+
+    .navbar a {
+        margin-left: 10px;
+    }
+
+    .Home-content {
+        max-width: 80%; /* Adjust the width to your preference */
+        margin: 0 auto; /* Center the content on smaller screens */
+    }
+
+    .Home-content h1 {
+        font-size: 40px; /* Adjust the font size for smaller screens */
+    }
+
+    .Home-content h3 {
+        font-size: 24px; /* Adjust the font size for smaller screens */
+    }
+
+    .Home-content p {
+        font-size: 16px; /* Adjust the font size for smaller screens */
+    }
+
+    .btn-box {
+        width: 100%; /* Make the button box full-width on smaller screens */
+        max-width: 300px; /* Limit the maximum width for buttons on smaller screens */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; /* Add some gap between the buttons */
+    }
+
+    .social-icons {
+        width: 100%; /* Make the social icons container full-width on smaller screens */
+        max-width: 150px; /* Limit the maximum width for social icons on smaller screens */
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto; /* Center the icons on smaller screens */
+    }
+}

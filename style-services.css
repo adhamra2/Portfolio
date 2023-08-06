@@ -1,0 +1,333 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+.nav{
+    background: #081b29;
+    height: 80px;
+    width: 100%;
+
+}
+
+
+body{
+    background-color:#081b29;
+    
+    display: flex;
+    background-size: cover;
+    background-position: center;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+
+
+    .logo{
+        position: relative;
+        text-decoration: none;
+        font-size: 25px;
+        color: #ededed;
+        font-weight: 600;
+        text-shadow: 0 0 10px rgba(0, 191, 255, 0.7); /* Add a sky blue glow shadow */
+        animation: glow5 2s ease-in-out infinite; /* Apply the glow animation */
+        
+    
+    }
+
+
+
+
+@keyframes glow5 {
+    0% {
+      text-shadow: 0 0 10px rgba(0, 191, 255, 0.7); /* Initial glow color and size */
+    }
+    50% {
+      text-shadow: 0 0 20px rgba(0, 191, 255, 0.9); /* Midway glow color and size */
+    }
+    100% {
+      text-shadow: 0 0 10px rgba(0, 191, 255, 0.7); /* Final glow color and size */
+    }
+  }
+
+  
+
+  @keyframes showRight {
+    100%{
+        width: 0;
+
+    }
+}
+
+
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    text-shadow: 0 0 10px rgba(0, 191, 255, 0.7); /* Add a sky blue glow shadow */
+    animation: glow1 2s ease-in-out infinite; /* Apply the glow animation */
+    
+
+}
+
+@keyframes glow {
+    0% {
+      text-shadow: 0 0 10px rgba(0, 191, 255, 0.7); /* Initial glow color and size */
+    }
+    50% {
+      text-shadow: 0 0 20px rgba(0, 191, 255, 0.9); /* Midway glow color and size */
+    }
+    100% {
+      text-shadow: 0 0 10px rgba(0, 191, 255, 0.7); /* Final glow color and size */
+    }
+  }
+
+.navbar :hover {
+    color: #00abf0;
+}
+
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 200px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #ededed;
+    text-shadow: 0 0 10px rgba(0, 191, 255, 0.7); /* Add a sky blue glow shadow */
+    animation: glow1 2s ease-in-out infinite; /* Apply the glow animation */
+
+
+
+}
+
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+
+
+
+.card{
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 10px;
+    width: 400px;
+    text-align: center; /* Center the text inside the card */
+    transition: 0.7s ease;
+
+    
+}
+
+
+
+
+
+
+.glow-card {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 10px;
+    width: 400px;
+    text-align: center; /* Center the text inside the card */
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.7); /* Add a sky blue glow shadow */
+    transition: box-shadow 0.3s ease-in-out;
+
+}
+
+.glow-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 191, 255, 0.7), 0 12px 30px rgba(0, 0, 0, 0.2);
+    
+    
+}
+
+h2 {
+    font-size: 24px;
+
+}
+
+p {
+    font-size: 18px;
+}
+
+.icon{
+    color: #3a6cf4;
+    font-size: 8em;
+    text-align: center;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+
+  .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 270px;
+    height: 50px;
+    
+    
+}
+
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin-left: 60px;
+    margin-top: 10px;
+
+
+
+}
+
+@keyframes slidein {
+    from{
+        margin-left: -100%;
+    }
+    to{
+        margin-left: 0%;
+    }
+}
+
+
+.btn-box .btn1{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin-left: 60px;
+    margin-top: 30px;
+
+}
+.btn-box a:hover{
+    color: #00abf0;
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: #00abf0;
+}
+.btn-box a:nth-child(2):hover{
+    color: #081b29;
+}
+.btn-box a:nth-child(2)::before{
+    background: #00abf0;
+}
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s;
+}
+.btn-box a:hover:before{
+    width: 100%;
+}
+
+.service-name{
+    margin-bottom: 10px;
+}
+
+.under-line{
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.7); /* Add a sky blue glow shadow */
+}
+
+.up-line{
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.7); /* Add a sky blue glow shadow */
+    margin-bottom: 30px;
+}
+
+.right-line{
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.7); /* Add a sky blue glow shadow */
+    margin-right: 30px;
+    
+}
+
+.lift-line{
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.7); /* Add a sky blue glow shadow */
+    margin-left: 30px;
+    
+}
+@media only screen and (max-width: 1023px) {
+    .container {
+        margin-top: 100px; /* Adjust the top margin for smaller screens */
+    }
+    
+    .glow-card {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+    
+    .card-container {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+    }
+    
+    .btn-box {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        margin-top: 20px; /* Add some spacing between buttons */
+    }
+    
+    .btn-box a {
+        margin: 5px 0; /* Add margin to buttons on smaller screens */
+    }
+}
+
